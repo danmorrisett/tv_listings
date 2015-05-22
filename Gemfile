@@ -39,8 +39,8 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'pry'
+  gem 'student_challenges_formatter', git: "git@github.com:gSchool/student-challenges-formatter-gem.git", branch: "rails-formatter"
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 end
-

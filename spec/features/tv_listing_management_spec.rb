@@ -44,7 +44,7 @@ feature "user can manage tv listings" do
 
 		expect(page).to have_content("Show Listing Successfully Added")
 		expect(current_path).to eq(show_path(Show.last))
-
+		save_and_open_page
 		expect(page).to have_content("Revenge of the Semicolon is showing on Channel 12 on 11/11/2011")
 		expect(page).to_not have_content("No Show Listings for Revenge of the Semicolon")
 	end
